@@ -3,4 +3,72 @@ body {
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    color: white;
 }
+
+h1 {
+    float: left;
+    background-color: #F8B195;
+    text-align: left;
+    padding: 10px 20px 10px 30px;
+}
+
+#directions {
+    float: right;
+    width: 80%;
+    background-color: #F8B195;
+    text-align: left;
+    padding: 10px 10px 10px 30px;
+}
+
+#userChoice {
+    float: left;
+    background-color: #355C7D;
+    width: 55%;
+    text-align: right;
+    padding: 10px 40px 10px 10px;
+    margin: 40px 0px 10px 0px;
+}
+
+#computerChoice {
+    float: left;
+    width: 70%;
+    background-color: #355C7D;
+    text-align: right;
+    padding: 10px 40px 10px 10px;
+    margin: 0px 0px 15px 0px;
+}
+
+#wins {
+    float: right;
+    background-color: #C06C84;
+    width: 60%;
+    text-align: left;
+    padding: 10px 10px 10px 40px;
+    margin: 0px 0px 10px 0px;
+}
+
+#losses {
+    float: right;
+    background-color: #C06C84;
+    width: 80%;
+    text-align: left;
+    padding: 10px 10px 10px 40px;
+    margin: 0px 0px 15px 0px;
+}
+
+#left {
+    float: left;
+    width: 60%;
+    background-color: #6C5B7B;
+    text-align: right;
+    padding: 10px 30px 10px 0px;
+}
+
+
+
+
+
+
+
+

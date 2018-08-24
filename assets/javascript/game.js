@@ -1,4 +1,3 @@
-
 // Array of choices that the computer is selecting from and being comapared to user input
 
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -28,6 +27,7 @@ function resetGame() {
     };
 }
 
+
 // Start the main function via an input by the user
 
 document.onkeyup = function(event) {
@@ -43,11 +43,11 @@ document.onkeyup = function(event) {
     
 // Convert function outputs into visible text for user
 
-    userChoiceText.textContent = userGuess;
-    computerChoiceText.textContent = computerGuess;
-    winsText.textContent = wins;
-    lossesText.textContent = losses;
-    leftText.textContent = guessesLeft
+    userChoiceText.textContent = "YOUR GUESS | " + userGuess;
+    computerChoiceText.textContent = "COMPUTER'S WORD | " + computerGuess;
+    winsText.textContent = "WINS | " + wins;
+    lossesText.textContent = "LOSSES | " + losses;
+    leftText.textContent = "GUESSES LEFT | " + guessesLeft;
 
 // State the outputs for specific results of user guessing correctly or incorrectly
 
