@@ -15,33 +15,31 @@ var userChoiceText = document.getElementById("userchoice-text");
 var computerChoiceText = document.getElementById("computerchoice-text");
 var winsText = document.getElementById("wins-text");
 var lossesText = document.getElementById("losses-text");
-var madeText = document.getElementById("made-text");
 var leftText = document.getElementById("left-text");
 
 // Designated function to reset game after guess limits has surpassed
 
 function resetGame() {
     if (guessesLeft < 1) {
-      losses++;
-      guessesLeft = 8;
+        losses++;
+        guessesLeft = 8;
     };
 }
 
-
 // Start the main function via an input by the user
 
-document.onkeyup = function(event) {
+document.onkeyup = function (event) {
 
-// Removes directions from header once action by the user has been taken
+    // Removes directions from header once action by the user has been taken
 
     directionsText.textContent = "";
 
-// Define how the user makes a guess as well as the computer
+    // Define how the user makes a guess as well as the computer
 
     var userGuess = event.key;
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-    
-// Convert function outputs into visible text for user
+
+    // Convert function outputs into visible text for user
 
     userChoiceText.textContent = "YOUR GUESS | " + userGuess;
     computerChoiceText.textContent = "COMPUTER'S WORD | " + computerGuess;
@@ -49,23 +47,16 @@ document.onkeyup = function(event) {
     lossesText.textContent = "LOSSES | " + losses;
     leftText.textContent = "GUESSES LEFT | " + guessesLeft;
 
-// State the outputs for specific results of user guessing correctly or incorrectly
+    // State the outputs for specific results of user guessing correctly or incorrectly
 
     if (userGuess === computerGuess) {
         wins++;
     } else if (userGuess != computerGuess) {
         guessesLeft--;
-    } 
+    }
 
-// Recall function that adds value to the losses section
+    // Recall function that adds value to the losses section
 
-    resetGame ()
+    resetGame()
 
 };
-
-
-
-
-
-
-
