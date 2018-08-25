@@ -3,7 +3,7 @@
 
 FUNCTION // 
 
-The purpose of this assignment was to cosntruct a "Psychic Game" using recently learned JavaScript skills. The goal of the game is to guess which letter the computer (your opponent) is guessing. Each round has 8 attempts for the users. A score is tabulated by wins and losses. 
+The purpose of this assignment was to construct a "Psychic Game" using recently learned JavaScript skills. The goal of the game is to guess which letter the computer (your opponent) is guessing. Each round has 8 attempts for the users. A score is tabulated by wins and losses. 
 
 
 USEFULNESS //
